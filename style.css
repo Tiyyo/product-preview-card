@@ -1,0 +1,146 @@
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 6rem;
+ }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+*{
+    /*margin: 0;*/
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+img{
+    max-width: 100%;
+}
+body{
+    font-size: 14px;
+    background : hsl(30, 38%, 92%);
+    
+}
+section{
+    margin: 20 10 0 10;
+    padding: 20 10 0 10;
+    max-width: 580px;
+}
+picture img{
+    border-radius: 0.5rem 0.5rem 0 0;
+   
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 15px;
+    border-radius: 0 0 0.5rem 0.5rem;
+    background-color: white;
+    margin-top: -0.5rem;
+
+}
+h1{
+    letter-spacing: 0.3rem;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+h2{
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+    font-weight: 700;
+    
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5rem;
+    color: hsl(228, 12%, 48%);
+}
+.price{
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Fraunces', serif;
+    display: flex;
+    align-items: flex-start;
+}
+span{
+    font-size: 0.7rem;
+    text-decoration: line-through;
+    color: hsl(229, 32%, 72%);
+    font-weight: 400;
+    margin-left: 1.5rem;
+    margin-top: -0.5rem;
+    
+    
+}
+button{
+    background-color:hsl(158, 36%, 37%);
+    border-radius: 0.5rem;
+    border: 0;
+    display: flex;
+    height: 50px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 0rem;
+}
+button p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+button:hover{
+    background-color: hsl(158, 36%, 15%);
+}
+@media screen and (min-width: 640px) {
+    *{
+        margin: 0;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-height: 450px;
+        max-width:580px;
+        
+    }
+    picture img{
+        border-radius: 0.5rem 0 0 0.5rem;
+        height: 100%;
+        
+        
+    }  
+    .card{
+        display: flex;
+        border-radius: 0 0.5rem 0.5rem 0;
+        box-sizing: content-box;
+        justify-content: space-evenly;
+        padding:0 0 0 30px;
+        margin-top: 0rem;
+        
+        
+    }  
+    p, h2, .price{
+        margin-top: 0;
+    }
+    button{
+        width: 90%;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 0rem;
+    }  
+}
